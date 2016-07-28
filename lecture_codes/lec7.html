@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>lec6</title>
+<title>lec7</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11751,14 +11751,17 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Today we are going to review functions. </span>
-<span class="c1">#We are going to go over how one function</span>
-<span class="c1">#calls another function and we are going to review </span>
-<span class="c1">#some functions from lab 2. </span>
-<span class="c1">#In lab, you are going to have new </span>
-<span class="c1">#exercises of writing simple functions</span>
-
-<span class="c1">#input---&gt;function---&gt;output</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Today we will see more examples of functions </span>
+<span class="c1">#calling each other. </span>
+<span class="c1">#You have already seen an example of this </span>
+<span class="c1">#in lecture 6. </span>
+<span class="c1">#And at the very end, we will cover a new topic </span>
+<span class="c1">#called recursion which we will cover tomorrow </span>
+<span class="c1">#and next week. Read lecture 4 handout </span>
+<span class="c1">#before class tomorrow. </span>
+<span class="c1">#It will probably be confusing at first</span>
+<span class="c1">#because it is a new topic. </span>
+<span class="c1">#But you will understand it over time. </span>
 </pre></div>
 
 </div>
@@ -11771,17 +11774,23 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Write a function called multiplyByTwo </span>
-<span class="c1">#that takes in an int and </span>
-<span class="c1">#returns the input * 2. </span>
-
-<span class="k">def</span> <span class="nf">multiplyByTwo</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">z</span><span class="o">*</span><span class="mi">2</span>
-
-<span class="c1">#what is the name of the function? multiplyByTwo</span>
-<span class="c1">#what is the input? z</span>
-<span class="c1">#what is the output z*2</span>
-<span class="c1">#the function returns the output which is z*2</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#some other things that you might have forgotten.</span>
+<span class="c1">#You can have a list of lists</span>
+<span class="c1">#e.g.</span>
+<span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="c1">#what is x[0]</span>
+<span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">]</span>
+<span class="c1">#how about now?</span>
+<span class="n">x</span><span class="o">=</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span><span class="mi">3</span><span class="p">,[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]]</span> 
+<span class="c1">#what is x[0]? [1,2]</span>
+<span class="c1">#what is x[1]? 3</span>
+<span class="c1">#what is x[2]? [4,5,6,7]</span>
+<span class="c1">#what is len(x)? 3</span>
+<span class="c1">#What is x[0][0]? </span>
+<span class="c1">#  1 because x[0] is [1,2] and [1,2][0] is 1.</span>
+<span class="c1">#what is x[0][1]? 2.</span>
+<span class="c1">#what is len(x[0][0])? </span>
+<span class="c1">#  Error because len(1) cannot use len on int.</span>
+<span class="c1">#what about len(x[0])? 2</span>
 </pre></div>
 
 </div>
@@ -11791,28 +11800,27 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[104]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Now we want to add 3 to a number and multiply it by 2</span>
-<span class="c1">#i.e. We want to create a function called</span>
-<span class="c1">#multiplyByTwoAddThree that takes in a number</span>
-<span class="c1">#and returns the (number +3)*2. </span>
-<span class="k">def</span> <span class="nf">addThree</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">z</span><span class="o">+</span><span class="mi">3</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Say you want to swap the values of a and b. </span>
+<span class="c1">#.e.g.</span>
+<span class="n">a</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">6</span>
 
-<span class="c1">#One function can call another function.</span>
-<span class="c1">#Here, multiplyByTwoAddThree calls another function</span>
-<span class="c1">#called addThree. When we call multiplyByTwoAddThree</span>
-<span class="c1">#with the input 5, multiplyByTwoAddThree calls</span>
-<span class="c1">#another function addThree. This function adds</span>
-<span class="c1">#3 to its input and returns the output. </span>
+<span class="c1">#a=b #now a is 6</span>
+<span class="c1">#b=a #b=a now b is also 6</span>
+<span class="c1">#new_a=a #new_a is 5</span>
+<span class="c1">#a=b #now what is a? a is 6</span>
+<span class="c1">#b=new_a #noew what is b? 5. </span>
 
-<span class="k">def</span> <span class="nf">multiplyByTwoAddThree</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">addThree</span><span class="p">(</span><span class="n">z</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span>
+<span class="c1">#and you want to have a=6 and b=5</span>
+<span class="c1">#How would you do this?</span>
 
-<span class="n">y</span><span class="o">=</span><span class="n">multiplyByTwoAddThree</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">y</span>
+
+<span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="n">b</span><span class="p">,</span><span class="n">a</span>
+<span class="k">print</span> <span class="n">a</span>
+<span class="k">print</span> <span class="n">b</span>
 </pre></div>
 
 </div>
@@ -11825,7 +11833,8 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>16
+<pre>6
+5
 </pre>
 </div>
 </div>
@@ -11836,41 +11845,57 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#printing something is different from returning</span>
-<span class="c1">#something. In this example, when we print y</span>
-<span class="c1">#what does it print? why? </span>
-<span class="c1">#what happens if we call </span>
-<span class="c1">#y=multiplyByTwo(5)</span>
-<span class="c1">#print y</span>
-<span class="c1">#why?</span>
-<span class="k">def</span> <span class="nf">multiplyByTwo</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
-    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">z</span><span class="p">)</span><span class="o">==</span><span class="nb">int</span><span class="p">:</span>
-        <span class="k">return</span>  <span class="n">z</span><span class="o">*</span><span class="mi">2</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Say you want to swap the values of a and b. </span>
+<span class="c1">#.e.g.</span>
+<span class="n">a</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">6</span>
+<span class="c1">#and you want to have a=6 and b=5</span>
+<span class="c1">#How would you do this?</span>
+<span class="n">new_a</span><span class="o">=</span><span class="n">b</span>
+<span class="n">b</span><span class="o">=</span><span class="n">a</span>
+<span class="n">a</span><span class="o">=</span><span class="n">new_a</span>
+
+<span class="c1">#an easy way to do this in python is </span>
+<span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="n">b</span><span class="p">,</span><span class="n">a</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#As we have seen before, one function can call another function. </span>
+<span class="c1">#What does this function do?</span>
+<span class="c1">#what is printed?</span>
+<span class="c1">#Having more than one function</span>
+<span class="k">def</span> <span class="nf">passing_grade</span><span class="p">(</span><span class="n">h</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">h</span><span class="o">&gt;</span><span class="mi">50</span><span class="p">:</span>
+        <span class="c1">#print &#39;good&#39;#True  &lt;--Some people are confused by print Vs. return</span>
+        <span class="k">return</span> <span class="bp">True</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span> <span class="s1">&#39;I only want integer output&#39;</span>
-        <span class="k">return</span> 
-<span class="n">y</span><span class="o">=</span><span class="n">multiplyByTwo</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">y</span>
+        <span class="c1">#print &#39;bad&#39;#False</span>
+        <span class="k">return</span> <span class="bp">False</span>
+
+<span class="k">def</span> <span class="nf">candy_for_grade</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">passing_grade</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;candy&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;no_candy&#39;</span>
+<span class="n">y</span><span class="o">=</span><span class="n">candy_for_grade</span><span class="p">(</span><span class="mi">51</span><span class="p">)</span>
+<span class="c1">#print y</span>
+
+<span class="c1">#what is the value of y?</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>10
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -11880,7 +11905,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Having more than one function</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#As we have seen before, one function can call another function. </span>
+<span class="c1">#What does this function do?</span>
+<span class="c1">#what is printed?</span>
+<span class="c1">#Having more than one function</span>
 <span class="k">def</span> <span class="nf">passing_grade</span><span class="p">(</span><span class="n">h</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">h</span><span class="o">&gt;</span><span class="mi">50</span><span class="p">:</span>
         <span class="k">print</span> <span class="s1">&#39;good&#39;</span><span class="c1">#True  &lt;--Some people are confused by print Vs. return</span>
@@ -11888,22 +11916,7 @@ div#notebook {
     <span class="k">else</span><span class="p">:</span>
         <span class="k">print</span> <span class="s1">&#39;bad&#39;</span><span class="c1">#False</span>
         <span class="k">return</span> <span class="bp">False</span>
-<span class="n">y</span><span class="o">=</span><span class="n">passing_grade</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">y</span>
-</pre></div>
 
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#One function can call another function. What does this function do?</span>
-<span class="c1">#what is printed?</span>
 <span class="k">def</span> <span class="nf">candy_for_grade</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">passing_grade</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
         <span class="k">return</span> <span class="s1">&#39;candy&#39;</span>
@@ -11911,6 +11924,72 @@ div#notebook {
         <span class="k">return</span> <span class="s1">&#39;no_candy&#39;</span>
 <span class="n">y</span><span class="o">=</span><span class="n">candy_for_grade</span><span class="p">(</span><span class="mi">51</span><span class="p">)</span>
 <span class="k">print</span> <span class="n">y</span>
+
+<span class="c1">#what is the value of y? Now? Rembmer </span>
+<span class="c1">#whether or not we print something, this </span>
+<span class="c1">#does not change</span>
+<span class="c1">#the value of why.</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#In lab2, you have looked at the function </span>
+<span class="c1">#isPalindrome which </span>
+<span class="c1">#returns True if a given string is a palindrome. </span>
+<span class="c1">#I.e., isPalindrome(&#39;abcde&#39;) returns False.</span>
+<span class="c1">#returns False and isPalindrome(&#39;abcba&#39;) </span>
+<span class="c1">#returns True. </span>
+<span class="c1">#You have also seen a function called reverse </span>
+<span class="c1">#that returns the reversed verion of a string.</span>
+<span class="c1">#I give you a function called reverse. It takes in</span>
+<span class="c1">#a string, and returns the reversed version of</span>
+<span class="c1">#the string. So reverse(&#39;abcba&#39;) returns abcba.</span>
+<span class="c1">#reverse(&#39;12345&#39;) returns &#39;54321&#39;. </span>
+<span class="c1">#reverse(12345) gives an error. </span>
+<span class="c1">#can you think of a way to create the function </span>
+<span class="c1">#isPalindrom by using the function reverse?</span>
+<span class="c1">#Like I said in lecture before, </span>
+<span class="c1">#first try to write down in English</span>
+<span class="c1">#how the function would work.</span>
+<span class="c1">#.....</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[109]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">Reverse</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)):</span>
+        <span class="n">y</span> <span class="o">+=</span> <span class="n">x</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">-</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> 
+    <span class="k">print</span> <span class="n">y</span>
+    <span class="k">return</span> <span class="n">y</span>
+    
+
+<span class="c1">#def isPalindrome(x):</span>
+<span class="c1">#    if Reverse(x)==x: #I am saying if None==x:</span>
+<span class="c1">#        return True</span>
+<span class="c1">#    else:</span>
+<span class="c1">#        return False</span>
+<span class="c1">#isPalindrome(&#39;abcba&#39;)</span>
+
+<span class="k">def</span> <span class="nf">isPalindrome</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">Reverse</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">==</span><span class="n">x</span>
+<span class="n">isPalindrome</span><span class="p">(</span><span class="s1">&#39;abcba&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11921,12 +12000,13 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>good
-candy
-</pre>
+<div class="output_area"><div class="prompt output_prompt">Out[109]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
 </div>
+
 </div>
 
 </div>
@@ -11935,21 +12015,227 @@ candy
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[111]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Having more than one function</span>
-<span class="k">def</span> <span class="nf">passing_grade</span><span class="p">(</span><span class="n">h</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">h</span><span class="o">&gt;</span><span class="mi">50</span><span class="p">:</span>
-        <span class="k">print</span> <span class="s1">&#39;good&#39;</span><span class="c1">#True  &lt;--Some people are confused by print Vs. return</span>
-        <span class="c1">#return True</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span> <span class="s1">&#39;bad&#39;</span><span class="c1">#False</span>
-        <span class="k">return</span> <span class="bp">False</span>
-<span class="n">y</span><span class="o">=</span><span class="n">passing_grade</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">y</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="mi">5</span><span class="o">==</span><span class="mi">5</span>
+</pre></div>
 
-<span class="c1">#Now what is printed? why?</span>
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[111]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">isPalindrome</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="n">reverse</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">False</span>
+
+<span class="n">isPalindrome</span><span class="p">(</span><span class="s1">&#39;123210&#39;</span><span class="p">)</span>    
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[46]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[115]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Another way</span>
+<span class="k">def</span> <span class="nf">isPalindrome</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">x</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">==</span><span class="n">reverse</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="c1">#this does the same thing as the function </span>
+<span class="c1">#isPalindrome above. </span>
+<span class="c1">#why?</span>
+<span class="c1">#if I give isPalindrome(&#39;12345&#39;) I want False</span>
+<span class="c1">#if I give isPalindrome(12345) I want False</span>
+<span class="c1">#if I give isPalindrome(&#39;abcba&#39;) I want True</span>
+<span class="c1">#if I give isPalindrome(12321) I want True</span>
+<span class="c1">#isPalindrome(&#39;12345&#39;)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[115]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Ok so now we want to have a function isPalindrome. </span>
+<span class="c1">#However, we want it</span>
+<span class="c1">#to be able to have a string or an int as an input. </span>
+<span class="c1">#the function we wrote above can only take a string.</span>
+<span class="c1">#what is the output of the code below?</span>
+
+<span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)):</span> 
+      <span class="n">y</span> <span class="o">+=</span> <span class="n">x</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">-</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> 
+    <span class="k">return</span> <span class="n">y</span>
+
+<span class="k">def</span> <span class="nf">isPalindrome</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="c1">#x=str(x) #add this to use ints. </span>
+    <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="n">reverse</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">False</span>
+    
+<span class="n">isPalindrome</span><span class="p">(</span><span class="mi">123210</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#We get a type error. Why? Because reverse only takes a string.</span>
+<span class="c1">#where exactly is the error? </span>
+<span class="c1">#1. We cannot use len on an int</span>
+<span class="c1">#2. We cannot index into an int like this: </span>
+<span class="c1">#       if x is an int we cannot say x[0] </span>
+<span class="c1">#or x[1] etc...</span>
+<span class="c1">#So how can we still have a function </span>
+<span class="c1">#that takes a string or an int and returns </span>
+<span class="c1">#whether or not that string or int is a palindrome? </span>
+<span class="c1">#There are many ways of </span>
+<span class="c1">#doing this. I will give you a few minutes to </span>
+<span class="c1">#think of a few ways.</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[120]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#One way to do this is to have 2 functions. </span>
+<span class="c1">#One checks if a string is </span>
+<span class="c1">#a palindrome. Another one checks if an int is </span>
+<span class="c1">#a palindrome.</span>
+<span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    This function takes a string. And returns</span>
+<span class="sd">    the reversed version of the string.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)):</span>
+      <span class="n">y</span> <span class="o">+=</span> <span class="n">x</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">-</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> 
+    <span class="k">return</span> <span class="n">y</span>
+
+<span class="k">def</span> <span class="nf">isStrPalindrome</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    This function takes a string and returns </span>
+<span class="sd">    True if the string is a palindrome. It returns</span>
+<span class="sd">    False otherwise. </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="c1">#return x==reverse(x)</span>
+    <span class="c1">#same as</span>
+    <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="n">reverse</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">False</span>
+
+<span class="k">def</span> <span class="nf">isIntPalindrome</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    This function takes an int. And returns</span>
+<span class="sd">    True if the int is a plandrome. It returns</span>
+<span class="sd">    False otherwise. </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="c1">#what is I did x==reverse(x)</span>
+    <span class="c1">#return str(x)==reverse(str(x))</span>
+    <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">==</span><span class="n">reverse</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="bp">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">False</span>
+
+<span class="k">def</span> <span class="nf">isPalindrome</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+   <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">==</span><span class="nb">str</span><span class="p">:</span>
+      <span class="c1">#isStrPalindrome takes a string</span>
+      <span class="c1">#and returns True if the string is </span>
+      <span class="c1">#a palindrome. False if not. </span>
+      <span class="k">return</span> <span class="n">isStrPalindrome</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+      
+   <span class="k">elif</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">==</span><span class="nb">int</span><span class="p">:</span>
+      <span class="c1">#isStrPalindrome takes a int</span>
+      <span class="c1">#and returns True if the int is </span>
+      <span class="c1">#a palindrome. False if not.</span>
+      <span class="k">return</span> <span class="n">isIntPalindrome</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+      <span class="k">print</span> <span class="s1">&#39;Wrong data type&#39;</span>
+      <span class="k">return</span>
+
+<span class="n">y</span><span class="o">=</span><span class="n">isPalindrome</span><span class="p">(</span><span class="mf">12.56</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">y</span>
 </pre></div>
 
 </div>
@@ -11962,7 +12248,7 @@ candy
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>good
+<pre>Wrong data type
 None
 </pre>
 </div>
@@ -11977,197 +12263,14 @@ None
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Can you give me a function called reverse, that takes in an input string</span>
-<span class="c1">#And returns the reversed version of the string. </span>
-<span class="c1">#For example, if the input is abcde it returns edcba. </span>
-<span class="c1">#This will give you an exercise using len and range</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Finally, we are going to cover recursion.</span>
+<span class="c1">#This might be a hard concept to understand </span>
+<span class="c1">#in the beginning. But with a little bit of </span>
+<span class="c1">#practice, </span>
+<span class="c1">#you&#39;ll get it. </span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">Lets say input_string=&#39;abcde&#39;</span>
-<span class="sd">Before you answer the question, you should try </span>
-<span class="sd">to figure out how the function would work on paper.</span>
-<span class="sd">what do we want to do?</span>
-<span class="sd">--&gt;go through all the characters in input_string</span>
-<span class="sd">one by one. (for loop)</span>
-<span class="sd">--&gt;Start from e (last character) and go to </span>
-<span class="sd">the first character. </span>
-<span class="sd">   --start here: </span>
-<span class="sd">        input_string[len(input_string)-1]</span>
-<span class="sd">        and also go to </span>
-<span class="sd">        input_string[len(input_string)-1-1]</span>
-<span class="sd">        input_string[len(input_string)-1-2]</span>
-<span class="sd">        .....</span>
-<span class="sd">        --do this until you get to </span>
-<span class="sd">        input_string[0]</span>
-
-<span class="sd">   --end here:</span>
-<span class="sd">        input_string[0]</span>
-<span class="sd">For each of these characters, </span>
-<span class="sd">add them to an output string</span>
-<span class="sd">When you are done, return the output string.</span>
-<span class="sd">&#39;&#39;&#39;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[30]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[0, 1, 2, 3, 4]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">input_string</span><span class="o">=</span><span class="s1">&#39;abcde&#39;</span>
-<span class="n">output_string</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
-<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">input_string</span><span class="p">)):</span>
-  <span class="n">output_string</span> <span class="o">+=</span> <span class="n">input_string</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span><span class="o">-</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="k">print</span> <span class="n">output_string</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>edcba
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
-    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)):</span>
-      <span class="n">y</span> <span class="o">+=</span> <span class="n">x</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">-</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> 
-    <span class="k">return</span> <span class="n">y</span>
-<span class="n">my_string</span><span class="o">=</span><span class="n">reverse</span><span class="p">(</span><span class="s1">&#39;12345&#39;</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">my_string</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>54321
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#what kind of error does this give me?</span>
-<span class="c1">#how do I fix it?</span>
-<span class="n">abc</span><span class="o">=</span><span class="s1">&#39;123456&#39;</span>
-<span class="k">for</span> <span class="n">x</span>  <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">abc</span><span class="p">)):</span>
-  <span class="k">print</span> <span class="n">x</span>
-  <span class="k">print</span> <span class="n">abc</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
-<span class="c1">#Reading the error message that you get helps you figure out where you might</span>
-<span class="c1">#have gone wrong in your code. So always read the error message you get. </span>
-<span class="c1">#many times it points you to the line and exact word that is problematic.</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-53-0bc4d3491bad&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">2</span>
-<span class="ansi-red-fg">    for x  range(len(abc)):</span>
-               ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#when you print the string it does not print it with quotation marks. </span>
-<span class="n">x</span><span class="o">=</span><span class="s1">&#39;timnit&#39;</span>
-<span class="k">print</span> <span class="n">x</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>timnit
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -12177,10 +12280,260 @@ None
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Lets start with an example.</span>
+<span class="c1">#consider the Fibonacci sequence </span>
+<span class="c1">#1, 1, 2, 3, 5, 8, 13, . . .. </span>
+<span class="c1">#This sequence is defined by the 0th and 1st </span>
+<span class="c1">#Fibonacci numbers both being 1, </span>
+<span class="c1">#and subsequent Fibonacci numbers being </span>
+<span class="c1">#the sum of the previous two.</span>
+
+<span class="c1">#The Fibonacci sequence is very well known in </span>
+<span class="c1">#Math and</span>
+<span class="c1">#appears frequently in nature. </span>
+<span class="c1">#It also has applications</span>
+<span class="c1">#in various computer science algorithms. </span>
+
+<span class="c1">#We will not discuss the Fibonacci sequence </span>
+<span class="c1">#in detail</span>
+<span class="c1">#in this class but if you are interested in </span>
+<span class="c1">#learning</span>
+<span class="c1">#more you can read the Wikipedia page here:</span>
+<span class="c1">#https://en.wikipedia.org/wiki/Fibonacci_number</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#The Fibonacci sequence is defined by the 0th </span>
+<span class="c1">#and 1st </span>
+<span class="c1">#Fibonacci numbers both being 1, </span>
+<span class="c1">#and subsequent Fibonacci numbers being </span>
+<span class="c1">#the sum of the previous two</span>
+<span class="c1">#F(i) is 1 if i=0 or i=1</span>
+<span class="c1">#   </span>
+<span class="c1">#F(i) is F(i−1) + F(i−2) otherwise</span>
+
+<span class="c1">#So what is F(0)? </span>
+<span class="c1">#    1 because i is 1</span>
+<span class="c1">#What is F(1)?</span>
+<span class="c1">#   1 because i is 1</span>
+<span class="c1">#What is F(2)</span>
+<span class="c1">#   It is F(i-1) + F(i-2)</span>
+<span class="c1">#   which is 1+1=2</span>
+<span class="c1">#F(3) is F(i-1)+F(i-2)=F(3-1)+F(3-2)</span>
+<span class="c1">#   which is F(2)+F(1)=2+1=3</span>
+<span class="c1">#F(4) is F(4-1)+F(4-2)=F(3)+F(2)=3+2=5</span>
+<span class="c1"># ....And it continues this way</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">##Now let us make a function that takes i and </span>
+<span class="c1">#returns the ith Fibonacci number. </span>
+<span class="c1">#We can do it the way we have learned how to.</span>
+<span class="c1">#First we write in English how we want to create </span>
+<span class="c1">#the function.</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Now let us make a function that takes i and </span>
+<span class="c1">#returns the ith Fibonacci number. </span>
+<span class="c1">#We can do it the way we have learned how to.</span>
+<span class="c1">#lets call the function fibonacci</span>
+<span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="n">fib_i</span><span class="o">=</span><span class="mi">1</span>
+    <span class="n">fib_i_prev</span><span class="o">=</span><span class="mi">1</span>
+    <span class="n">fib_i_prev_prev</span><span class="o">=</span><span class="mi">1</span>
+    
+    <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="mi">0</span> <span class="ow">or</span> <span class="n">i</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">fib_i</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">fib_i</span> <span class="o">=</span> <span class="n">fib_i_prev</span> <span class="o">+</span> <span class="n">fib_i_prev_prev</span>
+        <span class="n">fib_i_prev_prev</span><span class="o">=</span><span class="n">fib_i_prev</span>
+        <span class="n">fib_i_prev</span><span class="o">=</span><span class="n">fib_i</span>
+    <span class="k">return</span> <span class="n">fib_i</span>
+<span class="n">fibonacci</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[84]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>3</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Although we could implement the Fibonacci sequence</span>
+<span class="c1">#in a very complicated way without using recursion,</span>
+<span class="c1">#the following function using recursion </span>
+<span class="c1">#is very simple and easier to understand</span>
+<span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">fibonacci</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1">#compare this function to the function we </span>
+<span class="c1">#wrote above</span>
+<span class="c1">#which is more complicated and hard to understand</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[60]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>8</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Here is another example of a function that can</span>
+<span class="c1">#be done recursively. Multiplying 2 numbers</span>
+<span class="n">a</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">3</span>
+<span class="n">a</span><span class="o">*</span><span class="n">b</span>
+<span class="c1">#a*b gives 15 as you all know</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[18]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>15</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#We can implement the multiplication of 2 numbers</span>
+<span class="c1">#a and b in as recursive function only using </span>
+<span class="c1">#addition.</span>
+<span class="c1">#when you multiply 5*3, what do you do?</span>
+<span class="c1">#5*3 is 5+5+5. The function below adds 5 to itself</span>
+<span class="c1">#3 times. In genera, the function below takes </span>
+<span class="c1">#inputs a and b and adds a to itself b times. </span>
+<span class="c1">#This is the same as performing a*b.</span>
+<span class="k">def</span> <span class="nf">multiplyNumbers</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">print</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span>
+    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="p">(</span><span class="n">multiplyNumbers</span><span class="p">(</span><span class="n">a</span><span class="p">,(</span><span class="n">b</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)))</span>
+<span class="n">multiplyNumbers</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="c1">#we can print a and b to see how many times</span>
+<span class="c1">#multiplyNumbers is called and what the inputs(a,b)</span>
+<span class="c1">#are each time it is called. </span>
+<span class="c1">#Remember printing something</span>
+<span class="c1">#is different from returning something. We are </span>
+<span class="c1">#printing all of these values to</span>
+<span class="c1">#figure out what the function is doing. </span>
+<span class="c1">#This does not change what the </span>
+<span class="c1">#function is returning. </span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5 3
+5 2
+5 1
+5 0
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[31]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>15</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
