@@ -11,6 +11,15 @@ permalink: /publications/
 <i>arXiv:1703.02529</i>
 <br />
 
+<a href="http://genome.cshlp.org/content/26/10/1430.full">
+  A synergistic DNA logic predicts genome-wide chromatin accessibility
+</a> <br />
+Tatsunori Hashimoto, Richard I. Sherwood, <u class="dotted">Daniel Kang</u>,
+Nisha Rajagopal, Amira Barkal1, Haoyang Zeng, Bart Emons, Sharanya Srinivasan,
+Tommi Jaakkola, David Gifford
+<i>Genome Research (2016)</i>
+<br />
+
 <a href="https://academic.oup.com/bioinformatics/article/32/4/490/1743515/GERV-a-statistical-method-for-generative">
   GERV: a statistical method for generative evaluation of regulatory variants for transcription factor binding
 </a> <br />
