@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: default
 title: Publications
-permalink: /publication/
+permalink: /publications/
 ---
 
 <a href="https://arxiv.org/abs/1703.02529">
