@@ -15,6 +15,6 @@ permalink: /publications/
   Non-trapping surfaces of revolution with long-living resonances
 </a> <br />
 Kiril Datchev, <u class="dotted">Daniel Kang</u>, Andre Kessler <br />
-<i>Mathematical Research Letters</i>
+<i>Mathematical Research Letters (2015)</i>
 <br />
 
