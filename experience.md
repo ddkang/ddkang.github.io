@@ -10,7 +10,7 @@ permalink: experience/
 - Improved Brotli compression speeds by 40% or more
 
 ### Research Assistant @ MIT Gifford Lab (2013-15)
-- Applied machine learning techniques to study genomicsand cell state
+- Applied machine learning techniques to study genomics and cell state
 - Used parallel computing techniques to implement fast inference methods across the entire genome
 
 ### Software Engineering Intern @ Google (2013)
