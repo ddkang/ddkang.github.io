@@ -11,6 +11,14 @@ permalink: /publications/
 <i>PVLDB 2017</i>
 <br />
 
+<a href="http://dawn.cs.stanford.edu/benchmark/papers/nips17-dawnbench.pdf">
+  DAWNBench: An End-to-End Deep Learning Benchmark and Competition
+</a> <br />
+Cody A. Coleman, Deepak Narayanan, <u class="dotted">Daniel Kang</u>, Tian Zhao, Jian Zhang, Luigi Nardi, Peter Bailis,
+Kunle Olukotun, Chris Ré, and Matei Zaharia <br />
+<i>NIPS ML Systems Workshop 2017</i>
+<br />
+
 <a href="http://genome.cshlp.org/content/26/10/1430.full">
   A synergistic DNA logic predicts genome-wide chromatin accessibility
 </a> <br />
