@@ -11,6 +11,11 @@ permalink: /publications/
 <i>PVLDB 2017</i>
 <br />
 
+BlazeIt: An Optimizing Query Engine for Video at Scale <br />
+<u class="dotted">Daniel Kang</u>, Peter Bailis, Matei Zaharia <br />
+<i>To appear in SysML 2018</i>
+<br />
+
 <a href="http://dawn.cs.stanford.edu/benchmark/papers/nips17-dawnbench.pdf">
   DAWNBench: An End-to-End Deep Learning Benchmark and Competition
 </a> <br />
