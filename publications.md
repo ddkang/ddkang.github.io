@@ -11,14 +11,14 @@ permalink: /publications/
 <i>PVLDB 2017</i>
 <br />
 
-<a href="http://www.sysml.cc/doc/107.pdf">
+<a href="https://ddkang.github.io/papers/blazeit-sysml.pdf">
   BlazeIt: An Optimizing Query Engine for Video at Scale
 </a><br />
 <u class="dotted">Daniel Kang</u>, Peter Bailis, Matei Zaharia <br />
 <i>SysML 2018</i>
 <br />
 
-<a href="http://dawn.cs.stanford.edu/benchmark/papers/nips17-dawnbench.pdf">
+<a href="https://ddkang.github.io/papers/dawnbench-nips17.pdf">
   DAWNBench: An End-to-End Deep Learning Benchmark and Competition
 </a> <br />
 Cody A. Coleman, Deepak Narayanan, <u class="dotted">Daniel Kang</u>, Tian Zhao, Jian Zhang, Luigi Nardi, Peter Bailis,
