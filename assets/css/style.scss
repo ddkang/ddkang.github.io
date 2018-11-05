@@ -6,6 +6,10 @@
 body { font-size: 15px; }
 
 a:hover {
-font-weight: normal !important;
-background-color: rgba(38,124,195,0.15);
+  font-weight: normal !important;
+  background-color: rgba(38,124,195,0.15);
+}
+
+.half-line {
+  line-height: .5em;
 }

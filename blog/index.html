@@ -14,7 +14,7 @@ title: Daniel Kang's Blog
      <i><h7 class="post-author">{%if post.author %}by {{ post.author }}{% endif %}</h7></i>
      <br>
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-     <br><br>
+     <p class="half-line">&nbsp;</p>
     {{ post.content | strip_html | truncatewords:80 }}
   </article>
   <br>
