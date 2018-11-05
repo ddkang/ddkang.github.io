@@ -6,15 +6,15 @@ title: Daniel Kang's Blog
 <div class="posts">
   {% for post in paginator.posts %}
   <article class="post">
-    <h1>
+    <h2>
       <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
-    </h1>
+    </h2>
      <i><h7 class="post-author">{%if post.author %}by {{ post.author }}{% endif %}</h7></i>
      <br>
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-     <br>
+     <br><br>
     {{ post.content | strip_html | truncatewords:80 }}
   </article>
   <br>
