@@ -13,3 +13,7 @@ a:hover {
 .half-line {
   line-height: .5em;
 }
+
+.page {
+  width: calc(100% - #{$right-sidebar-width-narrow});
+}
