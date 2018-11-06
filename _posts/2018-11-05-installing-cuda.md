@@ -48,7 +48,6 @@ Installing Conda (~3.5 minutes):
 ```
 wget https://repo.anaconda.com/archive/Anaconda3-5.3.0-Linux-x86_64.sh
 time bash Anaconda3-5.3.0-Linux-x86_64.sh
-
 ```
 
 Making a new virtual environment, with Python 3.5 (~3.5 minutes):
