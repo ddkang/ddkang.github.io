@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Installing CUDA 9.2, CuDNN TODO, PyTorch nightly on Google Compute Engine
+title: Installing CUDA 9.2, CuDNN 7.2.1, PyTorch nightly on Google Compute Engine
 comments: true
 author: Daniel Kang
 ---
 
-How to install CUDA 9.2, CuDNN TODO, PyTorch nightly on Google Compute Engine. I expect this to be
+How to install CUDA 9.2, CuDNN 7.2.1, PyTorch nightly on Google Compute Engine. I expect this to be
 outdated when PyTorch 1.0 is released (built with CUDA 10.0).
 
 This uses Conda, but pip should ideally be as easy.
