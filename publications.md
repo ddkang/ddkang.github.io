@@ -47,14 +47,14 @@ Kunle Olukotun, Chris Ré, and Matei Zaharia <br />
 </a> <br />
 Tatsunori Hashimoto\*, Richard I. Sherwood\*, <u class="dotted">Daniel Kang*</u>,
 Nisha Rajagopal, Amira Barkal, Haoyang Zeng, Bart Emons, Sharanya Srinivasan,
-Tommi Jaakkola, David Gifford
+Tommi Jaakkola, David Gifford <br />
 <i>Genome Research (2016)</i>
 <br />
 
 <a href="https://academic.oup.com/bioinformatics/article/32/4/490/1743515/GERV-a-statistical-method-for-generative">
   GERV: a statistical method for generative evaluation of regulatory variants for transcription factor binding
 </a> <br />
-Haoyang Zeng, Tatsunori Hashimoto, <u class="dotted">Daniel Kang</u>, David Gifford
+Haoyang Zeng, Tatsunori Hashimoto, <u class="dotted">Daniel Kang</u>, David Gifford <br />
 <i>Bioinformatics (2016)</i>
 <br />
 
