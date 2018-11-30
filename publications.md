@@ -4,6 +4,11 @@ title: Publications
 permalink: /publications/
 ---
 
+Model Assertions for Debugging Machine Learning <br />
+<u class="dotted">Daniel Kang*</u>, Deepti Raghavan\*, Peter Bailis, Matei Zaharia <br />
+<i>NeurIPS MLSys Workshop 2018 (to appear)</i>
+<br />
+
 <a href="https://arxiv.org/abs/1703.02529">
   NoScope: Optimizing Neural Network Queries over Video at Scale
 </a> <br />
