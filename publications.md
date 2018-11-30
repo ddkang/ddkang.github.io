@@ -6,6 +6,12 @@ permalink: /publications/
 
 Model Assertions for Debugging Machine Learning <br />
 <u class="dotted">Daniel Kang*</u>, Deepti Raghavan\*, Peter Bailis, Matei Zaharia <br />
+<i>NeurIPS MLSys Workshop 2018, Invited Talk (to appear)</i>
+<br />
+
+Analysis of the Time-To-Accuracy Metric and Entries in the DAWNBench Deep Learning Benchmark <br />
+Cody Coleman\*, Deepak Narayanan\*, <u class="dotted">Daniel Kang*</u>, Tian Zhao, Jian Zhang, Luigi Nardi, Peter Bailis,
+Kunle Olukotun, Chris Ré, and Matei Zaharia <br />
 <i>NeurIPS MLSys Workshop 2018 (to appear)</i>
 <br />
 
@@ -26,7 +32,7 @@ Model Assertions for Debugging Machine Learning <br />
 <a href="https://ddkang.github.io/papers/dawnbench-nips17.pdf">
   DAWNBench: An End-to-End Deep Learning Benchmark and Competition
 </a> <br />
-Cody A. Coleman, Deepak Narayanan, <u class="dotted">Daniel Kang</u>, Tian Zhao, Jian Zhang, Luigi Nardi, Peter Bailis,
+Cody Coleman, Deepak Narayanan, <u class="dotted">Daniel Kang</u>, Tian Zhao, Jian Zhang, Luigi Nardi, Peter Bailis,
 Kunle Olukotun, Chris Ré, and Matei Zaharia <br />
 <i>NIPS ML Systems Workshop 2017</i>
 <br />
