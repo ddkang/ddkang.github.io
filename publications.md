@@ -34,7 +34,7 @@ Kunle Olukotun, Chris Ré, and Matei Zaharia <br />
 <a href="http://genome.cshlp.org/content/26/10/1430.full">
   A synergistic DNA logic predicts genome-wide chromatin accessibility
 </a> <br />
-Tatsunori Hashimoto, Richard I. Sherwood, <u class="dotted">Daniel Kang</u>,
+Tatsunori Hashimoto\*, Richard I. Sherwood\*, <u class="dotted">Daniel Kang*</u>,
 Nisha Rajagopal, Amira Barkal, Haoyang Zeng, Bart Emons, Sharanya Srinivasan,
 Tommi Jaakkola, David Gifford
 <i>Genome Research (2016)</i>
