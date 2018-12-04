@@ -20,6 +20,11 @@ Kunle Olukotun, Chris Ré, and Matei Zaharia <br />
 <i>NeurIPS MLSys Workshop 2018 (to appear)</i>
 <br />
 
+Block-wise Intermediate Representation Training for Model Compression <br />
+Animesh Koratana\*, <u class="dotted">Daniel Kang*</u>, Peter Bailis, Matei Zaharia <br />
+<i>NeurIPS CDNNRIA Workshop 2018 (to appear) </i>
+<br />
+
 <a href="https://arxiv.org/abs/1703.02529">
   NoScope: Optimizing Neural Network Queries over Video at Scale
 </a> <br />
