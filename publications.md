@@ -19,12 +19,14 @@ Model Assertions for Debugging Machine Learning <br />
 </a> <br />
 Cody Coleman\*, Deepak Narayanan\*, <u class="dotted">Daniel Kang*</u>, Tian Zhao, Jian Zhang, Luigi Nardi, Peter Bailis,
 Kunle Olukotun, Chris Ré, and Matei Zaharia <br />
-<i>NeurIPS MLSys Workshop 2018 (to appear)</i>
+<i>NeurIPS MLSys Workshop 2018</i>
 <br />
 
-Block-wise Intermediate Representation Training for Model Compression <br />
+<a href="https://ddkang.github.io/papers/2018/lit-nips-ws.pdf">
+  Block-wise Intermediate Representation Training for Model Compression
+</a> <br />
 Animesh Koratana\*, <u class="dotted">Daniel Kang*</u>, Peter Bailis, Matei Zaharia <br />
-<i>NeurIPS CDNNRIA Workshop 2018 (to appear) </i>
+<i>NeurIPS CDNNRIA Workshop 2018</i>
 <br />
 
 <a href="https://arxiv.org/abs/1703.02529">
