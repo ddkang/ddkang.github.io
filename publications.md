@@ -11,10 +11,12 @@ Challenges and Opportunities in DNN-Based Video Analytics: A Demo of the BlazeIt
 
 Model Assertions for Debugging Machine Learning <br />
 <u class="dotted">Daniel Kang*</u>, Deepti Raghavan\*, Peter Bailis, Matei Zaharia <br />
-<i>NeurIPS MLSys Workshop 2018, Invited Talk (to appear)</i>
+<i>NeurIPS MLSys Workshop 2018, Contributed Talk (to appear)</i>
 <br />
 
-Analysis of the Time-To-Accuracy Metric and Entries in the DAWNBench Deep Learning Benchmark <br />
+<a href="https://ddkang.github.io/papers/2018/dawnbench-nips-ws.pdf">
+  Analysis of the Time-To-Accuracy Metric and Entries in the DAWNBench Deep Learning Benchmark
+</a> <br />
 Cody Coleman\*, Deepak Narayanan\*, <u class="dotted">Daniel Kang*</u>, Tian Zhao, Jian Zhang, Luigi Nardi, Peter Bailis,
 Kunle Olukotun, Chris Ré, and Matei Zaharia <br />
 <i>NeurIPS MLSys Workshop 2018 (to appear)</i>
@@ -44,7 +46,7 @@ Animesh Koratana\*, <u class="dotted">Daniel Kang*</u>, Peter Bailis, Matei Zaha
 </a> <br />
 Cody Coleman, Deepak Narayanan, <u class="dotted">Daniel Kang</u>, Tian Zhao, Jian Zhang, Luigi Nardi, Peter Bailis,
 Kunle Olukotun, Chris Ré, and Matei Zaharia <br />
-<i>NIPS ML Systems Workshop 2017, Invited Talk</i>
+<i>NIPS ML Systems Workshop 2017, Contributed Talk</i>
 <br />
 
 <a href="http://genome.cshlp.org/content/26/10/1430.full">
