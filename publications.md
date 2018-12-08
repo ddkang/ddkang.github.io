@@ -9,9 +9,11 @@ Challenges and Opportunities in DNN-Based Video Analytics: A Demo of the BlazeIt
 <i>CIDR 2019 (to appear)</i>
 <br />
 
-Model Assertions for Debugging Machine Learning <br />
+<a href="https://ddkang.github.io/papers/2018/omg-nips-ws.pdf">
+  Model Assertions for Debugging Machine Learning
+</a><br />
 <u class="dotted">Daniel Kang*</u>, Deepti Raghavan\*, Peter Bailis, Matei Zaharia <br />
-<i>NeurIPS MLSys Workshop 2018, Contributed Talk (to appear)</i>
+<i>NeurIPS MLSys Workshop 2018, Contributed Talk</i>
 <br />
 
 <a href="https://ddkang.github.io/papers/2018/dawnbench-nips-ws.pdf">
