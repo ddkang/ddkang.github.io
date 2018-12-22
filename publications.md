@@ -4,9 +4,11 @@ title: Publications
 permalink: /publications/
 ---
 
-Challenges and Opportunities in DNN-Based Video Analytics: A Demo of the BlazeIt Video Query Engine <br />
+<a href="https://ddkang.github.io/papers/2019/blazeit-cidr.pdf">
+  Challenges and Opportunities in DNN-Based Video Analytics: A Demo of the BlazeIt Video Query Engine
+</a><br />
 <u class="dotted">Daniel Kang</u>, Peter Bailis, Matei Zaharia <br />
-<i>CIDR 2019 (to appear)</i>
+<i>CIDR 2019</i>
 <br />
 
 <a href="https://ddkang.github.io/papers/2018/omg-nips-ws.pdf">
