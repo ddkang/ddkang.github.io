@@ -16,7 +16,7 @@ permalink: /publications/
 </a><br />
 <u class="dotted">Daniel Kang*</u>, Deepti Raghavan\*, Peter Bailis, Matei Zaharia <br />
 <i>NeurIPS MLSys Workshop 2018, Contributed Talk</i> <br />
-<i>ICLR DebugML Workshop 2019, <b>Best student research paper</b>, Contributed talk</ i>
+<i>ICLR DebugML Workshop 2019, <b>Best student research paper</b>, Contributed talk</i>
 <br />
 
 <a href="https://ddkang.github.io/papers/2018/dawnbench-nips-ws.pdf">
