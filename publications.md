@@ -18,6 +18,7 @@ permalink: /publications/
 <i>NeurIPS MLSys Workshop 2018, Contributed Talk</i> <br />
 <i>ICLR DebugML Workshop 2019, <b>Best student research paper</b>, Contributed talk</i>
 <br />
+<!-- Talk: https://slideslive.com/38915703/model-assertions-fo-quality-assirance-in-machine-learning  -->
 
 <a href="https://ddkang.github.io/papers/2018/dawnbench-nips-ws.pdf">
   Analysis of the Time-To-Accuracy Metric and Entries in the DAWNBench Deep Learning Benchmark
