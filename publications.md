@@ -11,6 +11,13 @@ permalink: /publications/
 <i>CIDR 2019</i>
 <br />
 
+<a href="https://ddkang.github.io/papers/2019/blazeit-vldb.pdf">
+  BlazeIt: Optimizing Declarative Aggregation and Limit Queries for Neural Network-Based Video Analytics
+</a> <br />
+<u class="dotted">Daniel Kang</u>, Peter Bailis, Matei Zaharia <br />
+<i>Preprint</i>
+<br />
+
 <a href="https://ddkang.github.io/papers/2018/omg-nips-ws.pdf">
   Model Assertions for Debugging Machine Learning
 </a><br />
