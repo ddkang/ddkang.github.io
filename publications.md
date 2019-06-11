@@ -4,6 +4,13 @@ title: Publications
 permalink: /publications/
 ---
 
+<a href="https://ddkang.github.io/papers/2019/lit-icml.pdf">
+  LIT: Learned Intermediate Representation Training for Model Compression
+</a><br />
+Animesh Koratana*, <u class="dotted">Daniel Kang*</u>, Peter Bailis, Matei Zaharia <br />
+<i>ICML 2019</i>
+<br />
+
 <a href="https://ddkang.github.io/papers/2019/blazeit-cidr.pdf">
   Challenges and Opportunities in DNN-Based Video Analytics: A Demo of the BlazeIt Video Query Engine
 </a><br />
