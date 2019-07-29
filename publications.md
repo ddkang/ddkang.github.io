@@ -7,7 +7,8 @@ permalink: /publications/
 <a href="https://ddkang.github.io/papers/2019/dawnbench-osr.pdf">
   Analysis of DAWNBench, a Time-to-Accuracy Machine Learning Performance Benchmark
 </a><br />
-Cody Coleman&ast;, <u class="dotted">Daniel Kang*</u>, Deepak Narayanan&ast;, Luigi Nardi, Tian Zhao, Jian Zhang,
+Cody Coleman<code>&ast;</code>, <u class="dotted">Daniel Kang*</u>, Deepak Narayanan<code>&ast;</code>,
+Luigi Nardi, Tian Zhao, Jian Zhang,
 Peter Bailis, Kunle Olukotun, Chris Ré, Matei Zaharia <br />
 <i>ACM SIGOPS OSR 2019</i>
 <br />
