@@ -8,8 +8,8 @@ permalink: /publications/
   Analysis of DAWNBench, a Time-to-Accuracy Machine Learning Performance Benchmark
 </a><br />
 Cody Coleman*, <u class="dotted">Daniel Kang*</u>, Deepak Narayanan*, Luigi Nardi, Tian Zhao, Jian Zhang,
-Peter Bailis, Kunle Olukotun, Chris Ré, Matei Zaharia
-<i>ACM SIGOPS OSR</i>
+Peter Bailis, Kunle Olukotun, Chris Ré, Matei Zaharia <br />
+<i>ACM SIGOPS OSR 2019</i>
 <br />
 
 <a href="https://ddkang.github.io/papers/2019/lit-icml.pdf">
