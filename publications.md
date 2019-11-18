@@ -4,6 +4,13 @@ title: Publications
 permalink: /publications/
 ---
 
+<a href="https://ddkang.github.io/papers/2019/blazeit-vldb.pdf">
+  BlazeIt: Optimizing Declarative Aggregation and Limit Queries for Neural Network-Based Video Analytics
+</a> <br />
+<u class="dotted">Daniel Kang</u>, Peter Bailis, Matei Zaharia <br />
+<i>VLDB 2020</i>
+<br />
+
 <a href="https://ddkang.github.io/papers/2019/dawnbench-osr.pdf">
   Analysis of DAWNBench, a Time-to-Accuracy Machine Learning Performance Benchmark
 </a><br />
@@ -25,13 +32,6 @@ Animesh Koratana*, <u class="dotted">Daniel Kang*</u>, Peter Bailis, Matei Zahar
 </a><br />
 <u class="dotted">Daniel Kang</u>, Peter Bailis, Matei Zaharia <br />
 <i>CIDR 2019</i>
-<br />
-
-<a href="https://ddkang.github.io/papers/2019/blazeit-vldb.pdf">
-  BlazeIt: Optimizing Declarative Aggregation and Limit Queries for Neural Network-Based Video Analytics
-</a> <br />
-<u class="dotted">Daniel Kang</u>, Peter Bailis, Matei Zaharia <br />
-<i>Preprint</i>
 <br />
 
 <a href="https://ddkang.github.io/papers/2018/omg-nips-ws.pdf">
