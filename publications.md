@@ -4,7 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 
-<a href="https://ddkang.github.io/papers/2019/blazeit-vldb.pdf">
+<a href="https://ddkang.github.io/papers/2020/blazeit-vldb.pdf">
   BlazeIt: Optimizing Declarative Aggregation and Limit Queries for Neural Network-Based Video Analytics
 </a> <br />
 <u class="dotted">Daniel Kang</u>, Peter Bailis, Matei Zaharia <br />
