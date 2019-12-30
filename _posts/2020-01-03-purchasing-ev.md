@@ -43,18 +43,28 @@ Purchasing an EV gives you both state and federal tax credits. Make sure to take
 The amount depends on the vehicle and time of purchase.
 
 
-### Step 4: Other EV benefits
 
-In California, owning an EV lets you drive in the HOV lane for 4 years. You can figure out what
-you're eligible for [here](https://www.dmv.ca.gov/portal/dmv/?1dmy&urile=wcm:path:/dmv_content_en/dmv/vr/decal).
-
-
-### Step 5: Charging
+### Step 4: Charging
 
 Figure out your charging situation. You'll likely want to sign up for [ChargePoint](https://www.chargepoint.com/).
 
 
-### Step 6: Car accessories (optional)
+### Step 5: Wait for your license plate
+
+You'll have to wait 5-6 weeks for your license plate to arrive in the mail.
+
+
+### Step 6: Other EV benefits
+
+In California, owning an EV lets you drive in the HOV lane for 4 years. You can figure out what
+you're eligible for [here](https://www.dmv.ca.gov/portal/dmv/?1dmy&urile=wcm:path:/dmv_content_en/dmv/vr/decal).
+
+You will need to wait for your official license plate to arrive before applying for the sticker.
+
+
+
+
+### Step 7: Car accessories (optional)
 
 Some accessories are nice to have for a car. I think these are useful:
 - Phone charging cables
@@ -67,8 +77,12 @@ and for safety:
 - Car jack
 - Spare tire
 
+You'll likely want a FasTrak transponder if you plan on driving in California regularly. You can
+probably get the FasTrak CAV transponder for a 50% discount. The CAV transponder requires the DMV
+CAV certification (which I believe you'll get with your HOV sticker).
 
-### Step 7: Recurring maintenance/administrative tasks
+
+### Step 8: Recurring maintenance/administrative tasks
 
 Owning a car comes with many recurring tasks. Luckily, EVs are generally less maintenance than
 standard gas vehicles.
