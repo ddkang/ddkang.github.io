@@ -4,6 +4,12 @@ title: Publications
 permalink: /publications/
 ---
 
+Model Assertions for Improving and Monitoring ML Models
+<u class="dotted">Daniel Kang*</u>, Deepti Raghavan\*, Peter Bailis, Matei Zaharia <br />
+<i>MLSys 2020 (to appear)</i>
+<br />
+
+
 <a href="https://ddkang.github.io/papers/2020/blazeit-vldb.pdf">
   BlazeIt: Optimizing Declarative Aggregation and Limit Queries for Neural Network-Based Video Analytics
 </a> <br />
