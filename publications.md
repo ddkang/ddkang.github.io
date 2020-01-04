@@ -5,6 +5,7 @@ permalink: /publications/
 ---
 
 Model Assertions for Improving and Monitoring ML Models
+<br />
 <u class="dotted">Daniel Kang*</u>, Deepti Raghavan\*, Peter Bailis, Matei Zaharia <br />
 <i>MLSys 2020 (to appear)</i>
 <br />
