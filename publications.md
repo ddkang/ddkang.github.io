@@ -4,10 +4,26 @@ title: Publications
 permalink: /publications/
 ---
 
-Model Assertions for Improving and Monitoring ML Models
-<br />
+<a href="https://ddkang.github.io/papers/2020/ma-sysml20.pdf">
+  Model Assertions for Improving and Monitoring ML Models
+</a> <br />
 <u class="dotted">Daniel Kang*</u>, Deepti Raghavan\*, Peter Bailis, Matei Zaharia <br />
-<i>MLSys 2020 (to appear)</i>
+<i>MLSys 2020</i>
+<br />
+
+
+<a href="https://ddkang.github.io/papers/2020/willump-sysml.pdf">
+  Willump: A Statistically-Aware End-to-end Optimizer for Machine Learning Inference
+</a> <br />
+Peter Kraft, <u class="dotted">Daniel Kang</u>, Deepak Narayanan, Shoumik Palkar, Peter Bailis, Matei Zaharia <br />
+<i>MLSys 2020</i>
+<br />
+
+
+<a href="https://ddkang.github.io/papers/2020/mlperf-sysml.pdf">
+  MLPerf Training Benchmark
+</a> <br />
+<i>MLSys 2020</i>
 <br />
 
 
