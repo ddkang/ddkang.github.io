@@ -27,6 +27,13 @@ Peter Kraft, <u class="dotted">Daniel Kang</u>, Deepak Narayanan, Shoumik Palkar
 <br />
 
 
+<a href="https://ddkang.github.io/papers/2020/supg-paper.pdf">
+  Approximate Selection with Guarantees using Proxies
+</a> <br />
+<u class="dotted">Daniel Kang*</u>, Edward Gan\*, Peter Bailis, Tatsunori Hashimoto, Matei Zaharia <br />
+<br/>
+
+
 <a href="https://ddkang.github.io/papers/2020/blazeit-vldb.pdf">
   BlazeIt: Optimizing Declarative Aggregation and Limit Queries for Neural Network-Based Video Analytics
 </a> <br />
