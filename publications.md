@@ -4,8 +4,9 @@ title: Publications
 permalink: /publications/
 ---
 
-Improved Natural Language Generation via Loss Truncation
-<br />
+<a href="https://ddkang.github.io/papers/2020/loss-truncation-acl.pdf">
+  Improved Natural Language Generation via Loss Truncation
+</a> <br />
 <u class="dotted">Daniel Kang</u>, Tatsunori Hashimoto <br />
 <i>ACL 2020 (to appear)</i>
 <br />
