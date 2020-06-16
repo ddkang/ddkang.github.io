@@ -4,13 +4,26 @@ title: Publications
 permalink: /publications/
 ---
 
+
+<a href="https://ddkang.github.io/papers/2020/supg-paper.pdf">
+  Approximate Selection with Guarantees using Proxies
+</a> <br />
+<u class="dotted">Daniel Kang*</u>, Edward Gan\*, Peter Bailis, Tatsunori Hashimoto, Matei Zaharia <br />
+<i>VLDB 2020 (to appear)</i>
+<br/>
+
+A Demonstration of Willump: A Statistically-Aware End-to-end Optimizer for Machine Learning Inference
+<br />
+Peter Kraft, <u class="dotted">Daniel Kang</u>, Deepak Narayanan, Shoumik Palkar, Peter Bailis, Matei Zaharia
+<i>VLDB 2020 demo (to appear)</i>
+<br />
+
 <a href="https://ddkang.github.io/papers/2020/loss-truncation-acl.pdf">
   Improved Natural Language Generation via Loss Truncation
 </a> <br />
 <u class="dotted">Daniel Kang</u>, Tatsunori Hashimoto <br />
 <i>ACL 2020 (to appear)</i>
 <br />
-
 
 <a href="https://ddkang.github.io/papers/2020/ma-sysml20.pdf">
   Model Assertions for Improving and Monitoring ML Models
@@ -19,7 +32,6 @@ permalink: /publications/
 <i>MLSys 2020</i>
 <br />
 
-
 <a href="https://ddkang.github.io/papers/2020/willump-sysml.pdf">
   Willump: A Statistically-Aware End-to-end Optimizer for Machine Learning Inference
 </a> <br />
@@ -27,21 +39,11 @@ Peter Kraft, <u class="dotted">Daniel Kang</u>, Deepak Narayanan, Shoumik Palkar
 <i>MLSys 2020</i>
 <br />
 
-
 <a href="https://ddkang.github.io/papers/2020/mlperf-sysml.pdf">
   MLPerf Training Benchmark
 </a> <br />
 <i>MLSys 2020</i>
 <br />
-
-
-<a href="https://ddkang.github.io/papers/2020/supg-paper.pdf">
-  Approximate Selection with Guarantees using Proxies
-</a> <br />
-<u class="dotted">Daniel Kang*</u>, Edward Gan\*, Peter Bailis, Tatsunori Hashimoto, Matei Zaharia <br />
-<i>Preprint</i>
-<br/>
-
 
 <a href="https://ddkang.github.io/papers/2020/blazeit-vldb.pdf">
   BlazeIt: Optimizing Declarative Aggregation and Limit Queries for Neural Network-Based Video Analytics
