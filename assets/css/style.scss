@@ -43,3 +43,9 @@ h7.post-author:after {
   content: '·';
   margin-left: 4px;
 }
+
+@media print, screen and (min-width: 960px) {
+  header img {
+    max-width: 180px;
+  }
+}
