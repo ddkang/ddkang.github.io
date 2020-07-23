@@ -9,7 +9,7 @@ permalink: /publications/
   Approximate Selection with Guarantees using Proxies
 </a> <br />
 <u class="dotted">Daniel Kang*</u>, Edward Gan\*, Peter Bailis, Tatsunori Hashimoto, Matei Zaharia <br />
-<i>VLDB 2020 (to appear)</i>
+<i>VLDB 2020</i>
 <br/>
 
 A Demonstration of Willump: A Statistically-Aware End-to-end Optimizer for Machine Learning Inference
@@ -22,7 +22,7 @@ Peter Kraft, <u class="dotted">Daniel Kang</u>, Deepak Narayanan, Shoumik Palkar
   Improved Natural Language Generation via Loss Truncation
 </a> <br />
 <u class="dotted">Daniel Kang</u>, Tatsunori Hashimoto <br />
-<i>ACL 2020 (to appear)</i>
+<i>ACL 2020</i>
 <br />
 
 <a href="https://ddkang.github.io/papers/2020/ma-sysml20.pdf">
@@ -52,6 +52,9 @@ Peter Kraft, <u class="dotted">Daniel Kang</u>, Deepak Narayanan, Shoumik Palkar
 <i>VLDB 2020</i>
 <br />
 
+
+
+
 <a href="https://ddkang.github.io/papers/2019/dawnbench-osr.pdf">
   Analysis of DAWNBench, a Time-to-Accuracy Machine Learning Performance Benchmark
 </a><br />
@@ -74,6 +77,9 @@ Animesh Koratana*, <u class="dotted">Daniel Kang*</u>, Peter Bailis, Matei Zahar
 <u class="dotted">Daniel Kang</u>, Peter Bailis, Matei Zaharia <br />
 <i>CIDR 2019</i>
 <br />
+
+
+
 
 <a href="https://ddkang.github.io/papers/2018/omg-nips-ws.pdf">
   Model Assertions for Debugging Machine Learning
@@ -99,18 +105,21 @@ Animesh Koratana\*, <u class="dotted">Daniel Kang*</u>, Peter Bailis, Matei Zaha
 <i>NeurIPS CDNNRIA Workshop 2018</i>
 <br />
 
-<a href="https://arxiv.org/abs/1703.02529">
-  NoScope: Optimizing Neural Network Queries over Video at Scale
-</a> <br />
-<u class="dotted">Daniel Kang</u>, John Emmons, Firas Abuzaid, Peter Bailis, Matei Zaharia <br />
-<i>PVLDB 2017</i>
-<br />
-
 <a href="https://ddkang.github.io/papers/blazeit-sysml.pdf">
   BlazeIt: An Optimizing Query Engine for Video at Scale
 </a><br />
 <u class="dotted">Daniel Kang</u>, Peter Bailis, Matei Zaharia <br />
 <i>SysML 2018</i>
+<br />
+
+
+
+
+<a href="https://arxiv.org/abs/1703.02529">
+  NoScope: Optimizing Neural Network Queries over Video at Scale
+</a> <br />
+<u class="dotted">Daniel Kang</u>, John Emmons, Firas Abuzaid, Peter Bailis, Matei Zaharia <br />
+<i>PVLDB 2017</i>
 <br />
 
 <a href="https://ddkang.github.io/papers/dawnbench-nips17.pdf">
