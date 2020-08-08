@@ -5,6 +5,13 @@ permalink: /publications/
 ---
 
 
+Jointly Optimizing Preprocessing and Inference for DNN-based Visual Analytics
+<br />
+<u class="dotted">Daniel Kang</u>, Ankit Mathur, Teja Veeramacheneni, Peter Bailis, Matei Zaharia
+<br />
+<i>VLDB 2021 (to appear)</i>
+<br />
+
 <a href="https://ddkang.github.io/papers/2020/supg-paper.pdf">
   Approximate Selection with Guarantees using Proxies
 </a> <br />
