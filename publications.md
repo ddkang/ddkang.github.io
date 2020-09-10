@@ -19,7 +19,7 @@ Jointly Optimizing Preprocessing and Inference for DNN-based Visual Analytics
 <i>VLDB 2020</i>
 <br/>
 
-A Demonstration of Willump: A Statistically-Aware End-to-end Optimizer for Machine Learning Inference
+[A Demonstration of Willump: A Statistically-Aware End-to-end Optimizer for Machine Learning Inference](https://ddkang.github.io/papers/2020/p2833-kraft.pdf)
 <br />
 Peter Kraft, <u class="dotted">Daniel Kang</u>, Deepak Narayanan, Shoumik Palkar, Peter Bailis, Matei Zaharia
 <i>VLDB 2020 demo (to appear)</i>
