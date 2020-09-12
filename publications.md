@@ -5,7 +5,14 @@ permalink: /publications/
 ---
 
 
-Jointly Optimizing Preprocessing and Inference for DNN-based Visual Analytics
+[Task-agnostic Indexes for Deep Learning-based Queries over Unstructured Data](https://arxiv.org/abs/2009.04540)
+<br />
+<u class="dotted">Daniel Kang*</u>, John Guibas, Peter Bailis, Tatsunori Hashimoto, Matei Zaharia
+<br />
+<i>Preprint</i>
+<br />
+
+[Jointly Optimizing Preprocessing and Inference for DNN-based Visual Analytics](https://arxiv.org/abs/2007.13005)
 <br />
 <u class="dotted">Daniel Kang</u>, Ankit Mathur, Teja Veeramacheneni, Peter Bailis, Matei Zaharia
 <br />
