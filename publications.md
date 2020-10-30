@@ -16,7 +16,7 @@ permalink: /publications/
 <br />
 <u class="dotted">Daniel Kang</u>, Ankit Mathur, Teja Veeramacheneni, Peter Bailis, Matei Zaharia
 <br />
-<i>VLDB 2021 (to appear)</i>
+<i>VLDB 2021</i>
 <br />
 
 <a href="https://ddkang.github.io/papers/2020/supg-paper.pdf">
